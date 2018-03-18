@@ -1,0 +1,18 @@
+---
+# file: roles/ansible-common/tasks/setup-RedHat.yml
+
+- name: "Install essential packages for some Ansible modules"
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ essential_packages }}"
+  tags:
+    - install
+
+- name: "Install common packages for every Linux distribution"
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ common_packages }}"
+  tags:
+    - install

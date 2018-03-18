@@ -1,0 +1,21 @@
+---
+# file: roles/ansible-common/vars/Ubuntu-17.yml
+
+#
+# variables for Ubuntu 17.10 (Artful Aardvark)
+#
+
+# essential packages for ansible modules
+__essential_packages:
+  - python-apt
+  - python-selinux
+  - python-semanage
+  - python-lxml
+  - git
+  - unzip
+
+# common packages for every Ubuntu 17 system
+__common_packages:
+  - net-tools
+  - psmisc
+  - curl

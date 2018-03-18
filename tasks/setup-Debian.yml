@@ -1,0 +1,19 @@
+---
+# file: roles/ansible-common/tasks/setup-Debian.yml
+
+- name: "Install essential packages for some Ansible modules"
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ essential_packages }}"
+  tags:
+    - install
+
+- name: "Install common packages for every Linux distribution"
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ common_packages }}"
+  tags:
+    - install
+

@@ -1,0 +1,23 @@
+---
+# file: roles/ansible-common/defaults/main.yml
+
+# Essential packages for some ansible modules. The defaults provided by this
+# role are specific to each distribution.
+
+# essential_packages:
+#  - python-apt
+#  - python-selinux
+#  - python-semanage
+#  - python-lxml
+#  - git
+#  - unzip
+
+
+# Standard packages for every system. The defaults provided by this role are
+# specific to each distribution.
+
+# standard_packages:
+#  - net-tools
+#  - psmisc
+#  - vim
+#  - curl
