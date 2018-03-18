@@ -6,8 +6,8 @@ env:
     version: 7
   - distribution: centos
     version: 6
-#  - distribution: ubuntu
-#    version: artful
+  - distribution: ubuntu
+    version: artful
   - distribution: ubuntu
     version: xenial
   - distribution: ubuntu

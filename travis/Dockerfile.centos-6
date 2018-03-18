@@ -1,9 +1,10 @@
 FROM centos:6
-LABEL maintainer="Jeff Geerling"
+# Thanks to Jeff Geerling for his input on Docker with CentOS 6,
+# see: https://github.com/geerlingguy/docker-centos6-ansible/blob/master/Dockerfile
 
 # Install Ansible and other requirements.
 RUN yum makecache fast \
- && yum -y install deltarpm epel-release \
+ && yum -y install epel-release \
  && yum -y update \
  && yum -y install \
       ansible \
