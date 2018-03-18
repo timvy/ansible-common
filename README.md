@@ -10,7 +10,7 @@ Setup defaults (Ansible module dependencies, software packages, bash dotfiles, e
 * Debian 8 (Jessie) and
 * Debian 9 (Stretch).
 
-This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the essential_packages variable itself. The same applies to the standard packages. Because each system administrator or company defines its own preferences for the packages to install on each system, they can be specified using the common_packages variable.
+This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the `essential_packages` variable itself. The same applies to the standard packages. Because each system administrator or company defines its own preferences for the packages to install on each system, they can be specified using the `common_packages` variable.
 
 ## Requirements
 
