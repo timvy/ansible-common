@@ -20,7 +20,7 @@
         name: "{{ item }}"
         state: present
       with_items:
-        - build-essential
+#        - build-essential
         - unzip
         - tar
         - sudo
