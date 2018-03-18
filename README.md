@@ -62,7 +62,7 @@ None.
 
 ## Version
 
-Release: x.y.z
+Release: 0.1.0
 
 ## License
 
