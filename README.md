@@ -5,6 +5,7 @@
 Setup defaults (Ansible module dependencies, software packages, bash dotfiles, etc.) for every supported Linux distribution:
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
+* Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
 * Ubuntu 17.10 (Artful Aardvark),
 * Debian 8 (Jessie) and
@@ -62,7 +63,7 @@ None.
 
 ## Version
 
-Release: 0.2.0
+Release: 0.2.1
 
 ## License
 
