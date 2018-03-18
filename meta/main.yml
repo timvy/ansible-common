@@ -15,6 +15,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - artful
+      - trusty
       - xenial
     - name: Debian
       versions:
