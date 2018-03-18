@@ -1,0 +1,7 @@
+---
+# file: roles/ansible-common/tests/test.yml
+
+- hosts: all
+  become: true
+  roles:
+    - { role: ansible-common }

@@ -1,0 +1,22 @@
+---
+# file: roles/ansible-common/vars/RedHat-7.yml
+
+#
+# variables for Debian 8 (Jessie)
+#
+
+# essential packages for ansible modules
+__essential_packages:
+  - python-apt
+  - python-selinux
+  - python-semanage
+  - python-lxml
+  - git
+  - unzip
+
+# common packages for every Debian 8 system
+__common_packages:
+  - net-tools
+  - psmisc
+  - vim
+  - curl

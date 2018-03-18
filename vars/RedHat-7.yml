@@ -1,0 +1,23 @@
+---
+# file: roles/ansible-common/vars/RedHat-7.yml
+
+#
+# variables for Enterprise Linux (RHEL/CentOS) 7
+#
+
+# essential packages for ansible modules
+__essential_packages:
+  - libselinux-python
+  - libsemanage-python
+  - python-lxml
+  - git
+  - unzip
+
+# common packages for every Enterprise Linux 7 system
+__common_packages:
+  - yum-utils
+  - net-tools
+  - psmisc
+  - vim-enhanced
+  - curl
+  - firewalld

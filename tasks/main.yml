@@ -1,0 +1,25 @@
+---
+# file: roles/ansible-common/tasks/main.yml
+
+# Variable configuration.
+- name: "Include OS-specific variables (RedHat)."
+  include_vars: "{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
+  when: (ansible_os_family == "RedHat")
+
+- name: "Include version-specific variables (Debian)."
+  include_vars: "{{ ansible_distribution }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
+  when: ansible_os_family == 'Debian'
+
+- name: "Define essential_packages."
+  set_fact:
+    essential_packages: "{{ __essential_packages | list }}"
+  when: essential_packages is not defined
+
+- name: "Define common_packages."
+  set_fact:
+    common_packages: "{{ __common_packages | list }}"
+  when: common_packages is not defined
+
+
+# Setup/install tasks.
+- include_tasks: "setup-{{ ansible_os_family }}.yml"
