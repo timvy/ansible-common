@@ -54,7 +54,7 @@ script:
   - >
     echo Stop and remove docker container
     && sudo docker stop "$(cat ${container_id})"
-    && 'sudo docker rm -f "$(cat ${container_id})"
+    && sudo docker rm -f "$(cat ${container_id})"
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
