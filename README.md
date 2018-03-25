@@ -63,7 +63,7 @@ None.
 
 ## Version
 
-Release: 0.2.1
+Release: 0.3.0
 
 ## License
 
