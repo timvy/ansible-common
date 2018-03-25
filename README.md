@@ -15,7 +15,7 @@ This role is designed to run on every system as a initial setup. On the one hand
 
 ## Requirements
 
-On Ubuntu servers, the python-minimal package must be installed for Ansible to work.
+On Ubuntu servers, the python-minimal package must be installed before executing this role.
 
 ## Role Variables
 
@@ -58,12 +58,12 @@ None.
 - hosts: all
   become: true
   roles:
-    - { role: ansible-common }
+    - { role: coglinev3.ansible-common }
 ```
 
 ## Version
 
-Release: 0.2.1
+Release: 0.3.0
 
 ## License
 
