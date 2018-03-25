@@ -4,4 +4,4 @@
 - hosts: all
   become: true
   roles:
-    - { role: ansible-common }
+    - { role: coglinev3.ansible-common }
