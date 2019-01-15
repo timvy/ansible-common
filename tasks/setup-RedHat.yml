@@ -5,7 +5,6 @@
   yum:
     name: "{{ essential_packages }}"
     state: present
-  with_items: "{{ essential_packages }}"
   tags:
     - install
 
@@ -13,6 +12,5 @@
   yum:
     name: "{{ common_packages }}"
     state: present
-  with_items: "{{ common_packages }}"
   tags:
     - install
