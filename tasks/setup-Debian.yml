@@ -16,4 +16,3 @@
   when: not ansible_check_mode
   tags:
     - install
-

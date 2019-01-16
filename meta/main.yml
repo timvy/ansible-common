@@ -28,9 +28,8 @@ galaxy_info:
     - ansible
     - common
     - packages
-    - bash
-    - prompt
-    - dotfiles
+    - setup
+    - installation
 
 dependencies: []
   # List your role dependencies here, one per line.

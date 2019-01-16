@@ -2,16 +2,18 @@
 
 [![Build Status](https://travis-ci.org/coglinev3/ansible-common.svg?branch=master)](https://travis-ci.org/coglinev3/ansible-common)
 
-Setup defaults (Ansible module dependencies, software packages, bash dotfiles, etc.) for every supported Linux distribution:
+Setup defaults (Ansible module dependencies, software packages) for every supported Linux distribution:
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
 * Ubuntu 17.10 (Artful Aardvark),
+* Ubuntu 18.04 LTS (Bionic Beaver),
+* Ubuntu 18.10 (Cosmic Cuttlefish),
 * Debian 8 (Jessie) and
 * Debian 9 (Stretch).
 
-This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the `essential_packages` variable itself. The same applies to the standard packages. Because each system administrator or company defines its own preferences for the packages to install on each system, they can be specified using the `common_packages` variable.
+This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the `essential_packages` variable itself. The same applies to the standard packages. Because each system administrator or company has its own preferences for the packages to install on each system, those packages can be specified with the variable `common_packages`.
 
 ## Requirements
 
@@ -32,7 +34,6 @@ Available variables are listed below, along with default values:
 #  - python-lxml
 #  - git
 #  - unzip
-
 
 # Standard packages for every system. The defaults provided by this role are
 # specific to each distribution. You can define your own packages for example

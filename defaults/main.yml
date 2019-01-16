@@ -12,7 +12,6 @@
 #  - git
 #  - unzip
 
-
 # Standard packages for every system. The defaults provided by this role are
 # specific to each distribution.
 
