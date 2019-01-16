@@ -1,4 +1,4 @@
-FROM ubuntu:artful
+FROM ubuntu:cosmic
 
 # Avoid debconf error: unable to initialize frontend
 ARG DEBIAN_FRONTEND=noninteractive

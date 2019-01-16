@@ -20,6 +20,5 @@
     common_packages: "{{ __common_packages | list }}"
   when: common_packages is not defined
 
-
 # Setup/install tasks.
 - include_tasks: "setup-{{ ansible_os_family }}.yml"
