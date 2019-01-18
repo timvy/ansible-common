@@ -1,11 +1,11 @@
 ---
-# file: roles/ansible-common/vars/RedHat-7.yml
+# file: roles/ansible-common/vars/Debian-8.yml
 
 #
 # variables for Debian 8 (Jessie)
 #
 
-# essential packages for ansible modules
+# list of essential packages for ansible modules
 __essential_packages:
   - python-apt
   - python-selinux
@@ -14,7 +14,7 @@ __essential_packages:
   - git
   - unzip
 
-# common packages for every Debian 8 system
+# list of common packages
 __common_packages:
   - net-tools
   - psmisc

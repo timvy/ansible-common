@@ -4,7 +4,7 @@
 - name: "Debian: Install essential packages for some Ansible modules"
   apt:
     name: "{{ essential_packages }}"
-    state: present
+    state: "{{ essential_packages_state }}"
   when: not ansible_check_mode
   tags:
     - install
@@ -12,7 +12,7 @@
 - name: "Debian: Install common packages for every Linux distribution"
   apt:
     name: "{{ common_packages }}"
-    state: present
+    state: "{{ common_packages_state }}"
   when: not ansible_check_mode
   tags:
     - install

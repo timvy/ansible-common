@@ -44,6 +44,10 @@ Available variables are listed below, along with default values:
 #  - psmisc
 #  - vim
 #  - curl
+
+# default package states: present | latest | absent
+essential_packages_state: present
+common_packages_state: present
 ```
 
 ## Dependencies

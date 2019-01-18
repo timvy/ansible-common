@@ -5,7 +5,7 @@
 # variables for Debian 9 (Stretch)
 #
 
-# essential packages for ansible modules
+# list of essential packages for ansible modules
 __essential_packages:
   - python-apt
   - python-selinux
@@ -14,7 +14,7 @@ __essential_packages:
   - git
   - unzip
 
-# common packages for every Debian 9 system
+# list of common packages
 __common_packages:
   - net-tools
   - psmisc
