@@ -1,0 +1,19 @@
+---
+# file: roles/ansible-common/tasks/setup-Debian.yml
+
+- name: "Alpine: Install essential packages for some Ansible modules"
+  apk:
+    name: "{{ essential_packages }}"
+    state: "{{ essential_packages_state }}"
+    update_cache: "yes"
+  when: not ansible_check_mode
+  tags:
+    - install
+
+- name: "Alpine: Install common packages for every Linux distribution"
+  apk:
+    name: "{{ common_packages }}"
+    state: "{{ common_packages_state }}"
+  when: not ansible_check_mode
+  tags:
+    - install
