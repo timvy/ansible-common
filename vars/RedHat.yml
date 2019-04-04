@@ -2,21 +2,28 @@
 # file: roles/ansible-common/vars/RedHat-6.yml
 
 #
-# variables for Enterprise Linux (RHEL/CentOS) 6
+# variables for Enterprise Linux 6 (RHEL-/CentOS-6)
 #
 
 # list of essential packages for ansible modules
-__essential_packages:
+essential_packages:
+  - bzip2
+  - git
   - libselinux-python
   - libsemanage-python
+  - python-httplib2
+  - python-jinja2
   - python-lxml
-  - git
+  - python-yaml
+  - rsync
   - unzip
+  - zip
 
 # list of common packages
-__common_packages:
-  - yum-utils
+common_packages:
+  - curl
+  - htop
   - net-tools
   - psmisc
   - vim-enhanced
-  - curl
+  - yum-utils
