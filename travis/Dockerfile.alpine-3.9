@@ -1,0 +1,13 @@
+FROM alpine:3.9
+
+RUN apk add --no-cache \
+      git \
+      sudo \
+      shadow \
+      python \
+      ansible
+
+RUN mkdir /etc/ansible \
+  && echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+
+# vim: syntax=dockerfile
