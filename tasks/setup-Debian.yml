@@ -5,6 +5,7 @@
   apt:
     name: "{{ essential_packages }}"
     state: "{{ essential_packages_state }}"
+    update_cache: "yes"
   when: not ansible_check_mode
   tags:
     - install
