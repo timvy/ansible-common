@@ -10,4 +10,6 @@ RUN apk add --no-cache \
 RUN mkdir /etc/ansible \
   && echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
+VOLUME [ "/sys/fs/cgroup" ]
+ENTRYPOINT ["/sbin/init"]
 # vim: syntax=dockerfile
