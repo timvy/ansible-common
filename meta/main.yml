@@ -10,7 +10,7 @@ galaxy_info:
   platforms:
     - name: Alpine
       versions:
-      - 3.9
+      - any
     - name: EL
       versions:
       - 7
