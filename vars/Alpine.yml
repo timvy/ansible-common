@@ -1,0 +1,24 @@
+---
+# file: roles/ansible-common/vars/Alpine-NA.yml
+
+#
+# variables for Alpine 3.9
+#
+
+# list of essential packages for ansible modules
+essential_packages:
+  - bzip2
+  - git
+  - py-jinja2
+  - py-lxml
+  - py-yaml
+  - shadow
+  - unzip
+  - zip
+
+# list of common packages
+common_packages:
+  - curl
+  - htop
+  - net-tools
+  - vim

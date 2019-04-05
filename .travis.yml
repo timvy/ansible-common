@@ -20,6 +20,8 @@ env:
     version: stretch
   - distribution: debian
     version: jessie
+  - distribution: alpine
+    version: 3.9
 
 services:
   - docker
