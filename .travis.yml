@@ -14,6 +14,8 @@ env:
     version: bionic
   - distribution: ubuntu
     version: cosmic
+  - distribution: ubuntu
+    version: disco
   - distribution: debian
     version: stretch
   - distribution: debian
