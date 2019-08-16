@@ -4,6 +4,7 @@
 
 Setup defaults (Ansible module dependencies, software packages) for every supported Linux distribution:
 * Alpine Linux 3.9,
+* Alpine Linux 3.10,
 * Debian 8 (Jessie),
 * Debian 9 (Stretch),
 * Debian 10 (Buster),
@@ -112,7 +113,7 @@ package is installed. Thanks for discussion on [gist.github.com](https://gist.gi
 
 ## Version
 
-Release: 1.2.0
+Release: 1.3.0
 
 ## License
 
