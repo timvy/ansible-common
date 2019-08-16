@@ -5,7 +5,7 @@ galaxy_info:
   author: Cogline.v3
   description: Set up dependencies for Ansible standard modules and install default software packages for each supported Linux distribution.
   license: BSD
-  min_ansible_version: 2.7
+  min_ansible_version: 2.8
   #github_branch:
   platforms:
     - name: Alpine
@@ -17,15 +17,15 @@ galaxy_info:
       - 6
     - name: Ubuntu
       versions:
-      - artful
       - trusty
       - xenial
-      - cosmic
       - bionic
+      - disco
     - name: Debian
       versions:
       - jessie
       - stretch
+      - buster
     
   galaxy_tags:
     - ansible
