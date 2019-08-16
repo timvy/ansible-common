@@ -6,6 +6,7 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Alpine Linux 3.9,
 * Debian 8 (Jessie),
 * Debian 9 (Stretch),
+* Debian 10 (Buster),
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
