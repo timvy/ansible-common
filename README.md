@@ -11,7 +11,6 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Enterprise Linux 7, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
-* Ubuntu 17.10 (Artful Aardvark),
 * Ubuntu 18.04 LTS (Bionic Beaver) and
 * Ubuntu 18.10 (Cosmic Cuttlefish).
 
