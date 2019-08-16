@@ -11,8 +11,9 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Enterprise Linux 7, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
-* Ubuntu 18.04 LTS (Bionic Beaver) and
-* Ubuntu 18.10 (Cosmic Cuttlefish).
+* Ubuntu 18.04 LTS (Bionic Beaver),
+* Ubuntu 18.10 (Cosmic Cuttlefish) and
+* Ubuntu 19.04 (Disco Dingo).
 
 This role is designed to run on every system as a initial setup. On the one
 hand, essential packages for Ansible modules and, on the other hand, standard
