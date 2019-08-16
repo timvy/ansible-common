@@ -6,13 +6,13 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Alpine Linux 3.9,
 * Debian 8 (Jessie),
 * Debian 9 (Stretch),
+* Debian 10 (Buster),
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
-* Ubuntu 17.10 (Artful Aardvark),
 * Ubuntu 18.04 LTS (Bionic Beaver) and
-* Ubuntu 18.10 (Cosmic Cuttlefish).
+* Ubuntu 19.04 (Disco Dingo).
 
 This role is designed to run on every system as a initial setup. On the one
 hand, essential packages for Ansible modules and, on the other hand, standard
@@ -112,7 +112,7 @@ package is installed. Thanks for discussion on [gist.github.com](https://gist.gi
 
 ## Version
 
-Release: 1.1.1
+Release: 1.2.0
 
 ## License
 
