@@ -112,7 +112,7 @@ package is installed. Thanks for discussion on [gist.github.com](https://gist.gi
 
 ## Version
 
-Release: 1.1.1
+Release: 1.2.0
 
 ## License
 
