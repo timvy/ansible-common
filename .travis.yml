@@ -21,7 +21,9 @@ env:
   - distribution: debian
     version: buster
   - distribution: alpine
-    version: 3.9
+    version: "3.9"
+  - distribution: alpine
+    version: "3.10"
 
 services:
   - docker
