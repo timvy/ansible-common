@@ -113,7 +113,7 @@ package is installed. Thanks for discussion on [gist.github.com](https://gist.gi
 
 ## Version
 
-Release: 1.3.0
+Release: 1.3.1
 
 ## License
 
