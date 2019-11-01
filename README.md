@@ -10,6 +10,7 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Debian 10 (Buster),
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
+* Enterprise Linux 8, 
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
 * Ubuntu 18.04 LTS (Bionic Beaver) and
@@ -113,7 +114,7 @@ package is installed. Thanks for discussion on [gist.github.com](https://gist.gi
 
 ## Version
 
-Release: 1.3.1
+Release: 1.4.0
 
 ## License
 
