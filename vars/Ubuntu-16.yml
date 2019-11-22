@@ -1,7 +1,8 @@
 ---
 # file: roles/ansible-common/vars/Ubuntu-16.yml
 
-# Essential packages for some ansible modules.
+# Essential packages for some ansible modules. The defaults provided by this
+# role are specific to each distribution.
 
 essential_packages:
   - bzip2
@@ -16,7 +17,8 @@ essential_packages:
   - unzip
   - zip
 
-# Standard packages for every system.
+# Standard packages for every system. The defaults provided by this role are
+# specific to each distribution.
 
 common_packages:
   - curl
@@ -25,3 +27,7 @@ common_packages:
   - psmisc
   - vim
   - vim-common
+
+# default package states: present | latest | absent
+essential_packages_state: present
+common_packages_state: present
