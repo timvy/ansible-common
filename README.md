@@ -28,7 +28,7 @@ The role was tested with Docker on Travis-CI and with this [Multi-VM Vagrant env
 
 ## Requirements
 
-* On Ubuntu servers, the python-minimal package must be installed before you can
+* On Ubuntu servers, the python-minimal or python3-minimal package must be installed before you can
 execute this role.
 * On Alpine Linux servers, the Python package must be installed before you can
 execute this role.
@@ -45,13 +45,13 @@ Available variables are listed below, along with default values
 essential_packages:
   - bzip2
   - git
-  - python-apt
-  - python-httplib2
-  - python-jinja2
-  - python-lxml
-  - python-selinux
-  - python-semanage
-  - python-yaml
+  - python3-apt
+  - python3-httplib2
+  - python3-jinja2
+  - python3-lxml
+  - python3-selinux
+  - python3-semanage
+  - python3-yaml
   - rsync
   - unzip
   - zip
@@ -90,18 +90,19 @@ None.
 ```
 
 Using a pre_tasks statement on Ubuntu systems can ensure that the python-minimal
-package is installed. Thanks for discussion on [gist.github.com](https://gist.github.com/gwillem/4ba393dceb55e5ae276a87300f6b8e6f "gwillem/ansible-bootstrap-ubuntu-16.04.yml")
+or python3-minimal package is installed. Thanks for discussion on
+[gist.github.com](https://gist.github.com/gwillem/4ba393dceb55e5ae276a87300f6b8e6f "gwillem/ansible-bootstrap-ubuntu-16.04.yml")
 
 ```yml
 ---
 - hosts: ubuntu-nodes
   gather_facts: False
   become: true
-  # This will install python2 if missing on ubuntu (but checks first so no
+  # This will install python3 if missing on ubuntu (but checks first so no
   # expensive repeated apt updates)
   pre_tasks:
     - name: Install python for Ansible
-      raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+      raw: test -e /usr/bin/python3 || (apt -y update && apt install -y python3-minimal)
       register: output
       changed_when: output.stdout != ""
     - setup: # aka gather_facts
