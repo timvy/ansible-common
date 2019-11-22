@@ -2,16 +2,16 @@
 # file: roles/ansible-common/vars/Alpine-NA.yml
 
 #
-# variables for Alpine 3.9
+# variables for Alpine Linux
 #
 
 # list of essential packages for ansible modules
 essential_packages:
   - bzip2
   - git
-  - py-jinja2
-  - py-lxml
-  - py-yaml
+  - py3-jinja2
+  - py3-lxml
+  - py3-yaml
   - shadow
   - unzip
   - zip

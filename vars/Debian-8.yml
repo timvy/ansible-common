@@ -1,5 +1,5 @@
 ---
-# file: roles/ansible-common/defaults/main.yml
+# file: roles/ansible-common/vars/Debian-8.yml
 
 # Essential packages for some ansible modules. The defaults provided by this
 # role are specific to each distribution.
@@ -7,13 +7,13 @@
 essential_packages:
   - bzip2
   - git
-  - python3-apt
-  - python3-httplib2
-  - python3-jinja2
-  - python3-lxml
-  - python3-selinux
-  - python3-semanage
-  - python3-yaml
+  - python-apt
+  - python-httplib2
+  - python-jinja2
+  - python-lxml
+  - python-selinux
+  - python-semanage
+  - python-yaml
   - rsync
   - unzip
   - zip
