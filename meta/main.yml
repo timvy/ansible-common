@@ -24,6 +24,7 @@ galaxy_info:
         - xenial
         - bionic
         - "disco dingo"
+        - eoan
     - name: Debian
       versions:
         - jessie
