@@ -1,5 +1,5 @@
 ---
-# file: roles/ansible-common/defaults/main.yml
+# file: roles/ansible-common/vars/Ubuntu-16.yml
 
 # Essential packages for some ansible modules. The defaults provided by this
 # role are specific to each distribution.
@@ -12,7 +12,6 @@ essential_packages:
   - python3-jinja2
   - python3-lxml
   - python3-selinux
-  - python3-semanage
   - python3-yaml
   - rsync
   - unzip

@@ -2,30 +2,32 @@
 sudo: required
 
 env:
+  - distribution: alpine
+    version: "3.9"
+  - distribution: alpine
+    version: "3.10"
   - distribution: centos
     version: 6
   - distribution: centos
     version: 7
   - distribution: centos
     version: 8
-  - distribution: ubuntu
-    version: xenial
+  - distribution: debian
+    version: jessie
+  - distribution: debian
+    version: stretch
+  - distribution: debian
+    version: buster
   - distribution: ubuntu
     version: trusty
+  - distribution: ubuntu
+    version: xenial
   - distribution: ubuntu
     version: bionic
   - distribution: ubuntu
     version: disco
-  - distribution: debian
-    version: stretch
-  - distribution: debian
-    version: jessie
-  - distribution: debian
-    version: buster
-  - distribution: alpine
-    version: "3.9"
-  - distribution: alpine
-    version: "3.10"
+  - distribution: ubuntu
+    version: eoan
 
 services:
   - docker

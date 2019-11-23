@@ -1,0 +1,27 @@
+---
+# file: roles/ansible-common/vars/Ubuntu-16.yml
+
+# Essential packages for some ansible modules.
+
+essential_packages:
+  - bzip2
+  - git
+  - python-apt
+  - python-httplib2
+  - python-jinja2
+  - python-lxml
+  - python-selinux
+  - python-yaml
+  - rsync
+  - unzip
+  - zip
+
+# Standard packages for every system.
+
+common_packages:
+  - curl
+  - htop
+  - net-tools
+  - psmisc
+  - vim
+  - vim-common
