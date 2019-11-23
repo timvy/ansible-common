@@ -14,7 +14,8 @@ RUN apt-add-repository -y ppa:ansible/ansible \
       git \
       python3-minimal \
       ansible \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
