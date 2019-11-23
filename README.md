@@ -116,7 +116,7 @@ or python3-minimal package is installed. Thanks for discussion on
 
 ## Version
 
-Release: 1.4.0
+Release: 1.5.0
 
 ## License
 
