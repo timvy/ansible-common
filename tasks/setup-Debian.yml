@@ -1,6 +1,14 @@
 ---
 # file: roles/ansible-common/tasks/setup-Debian.yml
 
+- name: "Debian: Upgrade all packages to the latest version"
+  apt:
+    name: "*"
+    state: latest
+    update_cache: "{{ common_packages_update_cache | default('false')}}"
+  when: common_packages_update_all
+
+
 - name: "Debian: Install essential packages for some Ansible modules"
   apt:
     name: "{{ essential_packages }}"

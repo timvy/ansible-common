@@ -72,6 +72,12 @@ common_packages:
 # default package states: present | latest | absent
 essential_packages_state: present
 common_packages_state: present
+
+# upgrade all packages to the latest version: true | false
+common_packages_update_all: false
+
+# update package cache: yes | no
+common_packages_update_cache: no
 ```
 
 ## Dependencies
