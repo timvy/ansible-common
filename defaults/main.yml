@@ -37,4 +37,4 @@ common_packages_state: present
 common_packages_update_all: false
 
 # update package cache: yes | no
-common_packages_update_cache: no
+common_packages_update_cache: "no"

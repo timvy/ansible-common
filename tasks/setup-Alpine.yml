@@ -3,7 +3,7 @@
 
 - name: "Alpine: Upgrade all packages to the latest version"
   apk:
-    upgrade: yes
+    upgrade: "yes"
     update_cache: "{{ common_packages_update_cache | default('false')}}"
   when: common_packages_update_all
 
