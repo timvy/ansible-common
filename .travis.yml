@@ -18,6 +18,10 @@ env:
     version: stretch
   - distribution: debian
     version: buster
+  - distribution: fedora
+    version: 30
+  - distribution: fedora
+    version: 31
   - distribution: ubuntu
     version: trusty
   - distribution: ubuntu
