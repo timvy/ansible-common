@@ -11,19 +11,15 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
 * Enterprise Linux 8, 
+* Fedora 30,
+* Fedora 31,
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
 * Ubuntu 18.04 LTS (Bionic Beaver),
 * Ubuntu 19.04 (Disco Dingo) and
 * Ubuntu 19.10 (Eoan Ermine).
 
-This role is designed to run on every system as a initial setup. On the one
-hand, essential packages for Ansible modules and, on the other hand, standard
-packages for each Linux system are installed. Since each system administrator
-uses other Ansible modules, they can be defined using the `essential_packages`
-variable itself. The same applies to the standard packages. Because each system
-administrator or company has its own preferences for the packages to install on
-each system, those packages can be specified with the variable `common_packages`.
+This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the `essential_packages` variable itself. The same applies to the standard packages. Because each system administrator or company has its own preferences for the packages to install on each system, those packages can be specified with the variable `common_packages`.
 
 The role was tested with Docker on Travis-CI and with this [Multi-VM Vagrant environment](https://ansible-development.readthedocs.io/ "Vagrant environment for Developing and Testing Ansible Roles").
 
@@ -36,8 +32,7 @@ execute this role.
 
 ## Role Variables
 
-Available variables are listed below, along with default values
-(see defaults/main.yml):
+Available variables are listed below, along with default values (see defaults/main.yml):
 
 ```yml
 # Essential packages for some ansible modules. The defaults provided by this
@@ -77,7 +72,7 @@ common_packages_state: present
 common_packages_update_all: false
 
 # update package cache: yes | no
-common_packages_update_cache: no
+common_packages_update_cache: "no"
 ```
 
 ## Dependencies
@@ -96,9 +91,7 @@ None.
     - { role: coglinev3.ansible-common }
 ```
 
-Using a pre_tasks statement on Ubuntu systems can ensure that the python-minimal
-or python3-minimal package is installed. Thanks for discussion on
-[gist.github.com](https://gist.github.com/gwillem/4ba393dceb55e5ae276a87300f6b8e6f "gwillem/ansible-bootstrap-ubuntu-16.04.yml")
+Using a pre_tasks statement on Ubuntu systems can ensure that the python-minimal or python3-minimal package is installed. Thanks for discussion on [gist.github.com](https://gist.github.com/gwillem/4ba393dceb55e5ae276a87300f6b8e6f "gwillem/ansible-bootstrap-ubuntu-16.04.yml")
 
 ```yml
 ---
