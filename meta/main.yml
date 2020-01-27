@@ -23,7 +23,7 @@ galaxy_info:
         - trusty
         - xenial
         - bionic
-        - "disco dingo"
+        - disco
         - eoan
     - name: Debian
       versions:

@@ -5,7 +5,7 @@
   yum:
     name: "*"
     state: latest
-    update_cache: "{{ common_packages_update_cache | default('false')}}"
+    update_cache: "{{ common_packages_update_cache | default('false') }}"
   when: common_packages_update_all
 
 # The EPEL Repository should be installed on all EL Systems
