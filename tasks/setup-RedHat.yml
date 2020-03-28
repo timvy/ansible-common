@@ -1,12 +1,23 @@
 ---
 # file: roles/ansible-common/tasks/setup-RedHat.yml
 
-- name: "RedHat: Upgrade all packages to the latest version"
-  yum:
-    name: "*"
-    state: latest
-    update_cache: "{{ common_packages_update_cache | default('false') }}"
-  when: common_packages_update_all
+#-----------------------------------------------------------------------------
+# Bugfix: Fedora failed with Ansible/Python dnf error
+#
+# Note:
+#   This is only a workaround (see discussion on.
+#   https://github.com/geerlingguy/ansible-role-composer/issues/54)
+#-----------------------------------------------------------------------------
+
+- name: "Fedora: install dnf-automatic"
+  dnf:
+    name: dnf-automatic
+  register: install_dnf_automatic
+  until: install_dnf_automatic.rc == 0
+  retries: 20
+  delay: 0
+  when: ansible_distribution == "Fedora"
+#-----------------------------------------------------------------------------
 
 # The EPEL Repository should be installed on all EL Systems
 - name: "RedHat: Install EPEL Repository"
@@ -26,6 +37,13 @@
   when: not ansible_check_mode
   tags:
     - install
+
+- name: "RedHat: Upgrade all packages to the latest version"
+  yum:
+    name: "*"
+    state: latest
+    update_cache: "{{ common_packages_update_cache | default('false') }}"
+  when: common_packages_update_all
 
 - name: "RedHat: Install common packages for every Linux distribution"
   yum:

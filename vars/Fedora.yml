@@ -9,6 +9,7 @@
 essential_packages:
   - bzip2
   - git
+  - dnf-automatic
   - python3-libselinux
   - python3-libsemanage
   - python3-jinja2
