@@ -23,8 +23,8 @@ galaxy_info:
         - trusty
         - xenial
         - bionic
-        - disco
         - eoan
+        - focal
     - name: Debian
       versions:
         - jessie
@@ -32,8 +32,10 @@ galaxy_info:
         - buster
     - name: Fedora
       versions:
+        - 29
         - 30
         - 31
+        - 32
 
   galaxy_tags:
     - ansible
