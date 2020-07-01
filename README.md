@@ -5,19 +5,23 @@
 Setup defaults (Ansible module dependencies, software packages) for every supported Linux distribution:
 * Alpine Linux 3.9,
 * Alpine Linux 3.10,
+* Alpine Linux 3.11,
+* Alpine Linux 3.12,
 * Debian 8 (Jessie),
 * Debian 9 (Stretch),
 * Debian 10 (Buster),
 * Enterprise Linux 6, 
 * Enterprise Linux 7, 
 * Enterprise Linux 8, 
+* Fedora 29,
 * Fedora 30,
 * Fedora 31,
+* Fedora 32,
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),
 * Ubuntu 18.04 LTS (Bionic Beaver),
-* Ubuntu 19.04 (Disco Dingo) and
-* Ubuntu 19.10 (Eoan Ermine).
+* Ubuntu 19.10 (Eoan Ermine) and
+* Ubuntu 20.04 LTS (Focal Fossa).
 
 This role is designed to run on every system as a initial setup. On the one hand, essential packages for Ansible modules and, on the other hand, standard packages for each Linux system are installed. Since each system administrator uses other Ansible modules, they can be defined using the `essential_packages` variable itself. The same applies to the standard packages. Because each system administrator or company has its own preferences for the packages to install on each system, those packages can be specified with the variable `common_packages`.
 
@@ -115,7 +119,7 @@ Using a pre_tasks statement on Ubuntu systems can ensure that the python-minimal
 
 ## Version
 
-Release: 1.6.2
+Release: 1.7.0
 
 ## License
 
