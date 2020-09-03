@@ -7,10 +7,15 @@
         name: "coglinev3.ansible-common"
 
     - name: "Log in as User ansible and execute git --version"
-      remote_user: root
       become: true
+      #become_user: ansible
       become_user: ansible
-      shell: PATH=/usr/local/bin:/bin:/usr/bin git --version
+      command: git --version
+      environment:
+        PATH: /usr/local/bin:/bin:/usr/bin
+      changed_when: false
+      args:
+        warn: false # set warn=false to prevent warning
       register: git_version
 
     - name: Check if git is installed correctly.
@@ -18,4 +23,4 @@
         that:
           - git_version.rc == 0
         fail_msg: "Git not installed properly"
-        success_msg: "Git installed correctly"
+        success_msg: "Role works fine, {{ git_version.stdout }} installed correctly"
