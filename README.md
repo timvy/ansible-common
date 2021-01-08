@@ -12,7 +12,6 @@ Setup defaults (Ansible module dependencies, software packages) for every suppor
 * Debian 10 (Buster),
 * Enterprise Linux 7, 
 * Enterprise Linux 8, 
-* Fedora 31,
 * Fedora 32,
 * Ubuntu 14.04 LTS (Trusty Tahr),
 * Ubuntu 16.04 LTS (Xenial Xerus),

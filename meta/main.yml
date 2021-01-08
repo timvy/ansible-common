@@ -30,7 +30,6 @@ galaxy_info:
         - buster
     - name: Fedora
       versions:
-        - 31
         - 32
 
   galaxy_tags:
