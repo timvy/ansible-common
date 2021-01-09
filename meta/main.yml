@@ -17,13 +17,11 @@ galaxy_info:
       versions:
         - 8
         - 7
-        - 6
     - name: Ubuntu
       versions:
         - trusty
         - xenial
         - bionic
-        - eoan
         - focal
     - name: Debian
       versions:
@@ -32,10 +30,8 @@ galaxy_info:
         - buster
     - name: Fedora
       versions:
-        - 29
-        - 30
-        - 31
         - 32
+        - 33
 
   galaxy_tags:
     - ansible
